@@ -115,19 +115,3 @@ Dans un dépistage médical cardio-vasculaire, **manquer un patient malade (faux
 Le modèle sklearn optimisé obtient de meilleures performances que l'implémentation custom, grâce aux optimisations numériques et à la recherche d'hyperparamètres. Les deux approches convergent vers des résultats similaires, validant la logique de la régression logistique.
 
 Les facteurs de risque identifiés par le modèle (âge, tension artérielle, cholestérol) sont cohérents avec les **12 facteurs de risque cardiovasculaire** reconnus par la littérature médicale. La régression logistique offre un bon compromis entre **interprétabilité** et **performance**, ce qui est essentiel dans un contexte médical où les décisions doivent être justifiables.
-
----
-
-## Structure du projet
-
-```
-cardio-vasc-risks/
-├── data/
-│   ├── raw/
-│   │   ├── cardio_train.csv          # Dataset brut
-│   │   └── cardiovasc_description.txt
-│   └── clean/
-│       └── cardio_train_clean.csv    # Dataset nettoyé
-├── exploration.ipynb                 # Notebook principal
-└── README.md
-```
