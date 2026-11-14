@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import json; nb=json.load\\(open\\('exploration.ipynb'\\)\\); [print\\(f'Cell {i}: {c[\\\\\"cell_type\\\\\"]} - {str\\(c.get\\(\\\\\"source\\\\\",\\\\\"\\\\\"\\)\\)[:100]}'\\) for i,c in enumerate\\(nb['cells']\\)]\")",
+      "Bash(python -c \"import json; nb=json.load\\(open\\('exploration.ipynb'\\)\\); src=nb['cells'][16]['source']; print\\(''.join\\(src\\)\\)\")",
+      "Bash(python -c \"import json; nb=json.load\\(open\\('exploration.ipynb'\\)\\); print\\(json.dumps\\([{'idx':i,'type':c['cell_type'],'src':''.join\\(c.get\\('source',[]\\)\\)} for i,c in enumerate\\(nb['cells']\\)], ensure_ascii=False, indent=2\\)\\)\")",
+      "Bash(python -c \"import json; nb=json.load\\(open\\('exploration.ipynb'\\)\\); print\\(json.dumps\\(nb.get\\('metadata',{}\\), indent=2\\)\\)\")",
+      "Bash(python _build_nb.py)"
+    ]
+  }
+}
