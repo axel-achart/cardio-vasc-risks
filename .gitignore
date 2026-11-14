@@ -1,0 +1,22 @@
+# Environnements virtuels
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets et configuration locale
+.env
+.env.*
+.claude/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
